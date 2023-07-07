@@ -61,7 +61,7 @@ function verificar(){
             let resultado="Você acertou " + acertos.length + " dezenas na aposta " + k + "!" +"<br>";
         }
         
-        resultado="Você acertou " + acertos.length + " dezenas na aposta " + k + "!" +"<hr>";
+        resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1) + "!" +"<hr>";
         document.querySelector('#output').innerHTML+=resultado;
 
     } 
