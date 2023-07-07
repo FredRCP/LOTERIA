@@ -47,12 +47,12 @@ document.addEventListener('click', (e)=>{
 function verificar(){
     if(numeroscadastrados.length===0){return alert("Primeiro cadastre suas apostas")}
     if(numerossorteados.length!==6){return alert
-    ("Antes de verificar o resultado selecione a quantidade correta de números sorteados!")}
-
-    let acertos=[];
+    ("Antes de verificar o resultado você deve selecionar as 6 dezenas sorteadas!")}
+    document.querySelector('#output').innerHTML="";
+    
 
     for(k=0; k<numeroscadastrados.length; k++){
-
+        let acertos=[];
         for(l=0; l<numeroscadastrados[k].length; l++){
 
             if(numerossorteados.indexOf(numeroscadastrados[k][l])!==-1){
@@ -61,7 +61,12 @@ function verificar(){
             let resultado="Você acertou " + acertos.length + " dezenas na aposta " + k + "!" +"<br>";
         }
         
+        resultado="Você acertou " + acertos.length + " dezenas na aposta " + k + "!" +"<hr>";
         document.querySelector('#output').innerHTML+=resultado;
 
     } 
+}
+
+function megar(){
+    window.open('https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx', '_target');
 }
