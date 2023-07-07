@@ -114,6 +114,18 @@ a{
   text-align: center;
   
 }
+
+.megao{
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 5rem;
+}
+
+.mega1{
+  display: flex;
+  flex-direction: column;
+}
+
 table tr td{
   gap: 10rem;
 }
