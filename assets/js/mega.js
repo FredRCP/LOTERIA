@@ -6,7 +6,7 @@ let i =1;
 //CADASTRAR APOSTAS
 function cadastrarmega(){
     let n=Number(prompt('Qual o número de apostas?'));
-    alert('Os números de 1 a 9 devem ser precedidos pelo algorismo 0! Exemplo 01, 02...');
+    alert('Digite as dezenas sem espaços entre elas. Os números de 1 a 9 devem ser precedidos pelo algorismo 0! Exemplo 01, 02...');
     if(isNaN(n)){alert('Digite exclusivamente números!')}
     while(numeroscadastrados.length<(n+tamanhoarray)){
        let aposta= prompt('Digite os números da aposta ' + i);
@@ -58,13 +58,28 @@ function verificar(){
             if(numerossorteados.indexOf(numeroscadastrados[k][l])!==-1){
                 acertos.push(numeroscadastrados[k][l]);
             }
-            let resultado="Você acertou " + acertos.length + " dezenas na aposta " + k + "!" +"<br>";
-        }
+        }   
         
-        resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1) + "!" +"<hr>";
+        let resultado="";
+            if(acertos.length===0){resultado="Você não acertou nenhuma dezena na aposta " + (k+1)+ "!" + " Que pena, não foi dessa vez!" +"<hr>"}
+            if(acertos.length===1){resultado="Você acertou " + acertos.length + " dezena na aposta " + (k+1)+ "!" + " Que pena, não foi dessa vez!" +"<hr>"}
+            if(acertos.length===2){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!" + " Que pena, não foi dessa vez!" +"<hr>"}  
+            if(acertos.length===3){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!" + " Que pena, foi por pouco!" +"<hr>"}
+            if(acertos.length===4){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!"+" Parabéns, você acertou a quadra!" +"<hr>"}
+            if(acertos.length===5){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!"+" Parabéns, você acertou a quina!" +"<hr>"}
+            if(acertos.length===6){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!"+" Parabéns, você acertou a sena, está milionário!!" +"<hr>"}
+
         document.querySelector('#output').innerHTML+=resultado;
 
     } 
+}
+
+function marcar(){
+    const tabela =document.querySelector('table');
+    const trevo= document.querySelector('.trevo');
+    tabela.style.display='block';
+    trevo.style.display='none';
+
 }
 
 function megar(){
