@@ -117,13 +117,14 @@ a{
 
 .megao{
   display: grid;
-  grid-template-columns: 200px 1fr 200px;
-  gap: 5rem;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 3rem;
 }
 
 .mega1{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 table tr td{
@@ -132,6 +133,7 @@ table tr td{
 
 .megabtn{
   border-radius: 0.8rem;
+  padding: 0.5rem;
 }
 
 .megabtn:hover{
