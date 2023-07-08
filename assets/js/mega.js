@@ -85,3 +85,15 @@ function marcar(){
 function megar(){
     window.open('https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx', '_target');
 }
+
+function resetar(){
+    numeroscadastrados=[];
+    numerossorteados=[];
+    tamanhoarray=0;
+    i =1;   
+    const tabela =document.querySelector('table');
+    const trevo= document.querySelector('.trevo');
+    tabela.style.display='none';
+    trevo.style.display='block';   
+    document.querySelector('#output').innerHTML="";                  
+} 
