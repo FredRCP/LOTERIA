@@ -31,3 +31,5 @@ function carregar(response){
     const resultado= document.querySelector('.resultado');
     resultado.innerHTML= response;
 }
+
+
