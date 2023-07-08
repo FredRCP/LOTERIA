@@ -49,6 +49,10 @@ function verificar(){
     if(numerossorteados.length!==6){return alert
     ("Antes de verificar o resultado você deve selecionar as 6 dezenas sorteadas!")}
     document.querySelector('#output').innerHTML="";
+    const tabela =document.querySelector('table');
+    const trevo= document.querySelector('.trevo');
+    tabela.style.display='none';
+    trevo.style.display='block'; 
     
 
     for(k=0; k<numeroscadastrados.length; k++){
@@ -61,13 +65,13 @@ function verificar(){
         }   
         
         let resultado="";
-            if(acertos.length===0){resultado="Você não acertou nenhuma dezena na aposta " + (k+1)+ "!" + " Que pena, não foi dessa vez!" +"<hr>"}
-            if(acertos.length===1){resultado="Você acertou " + acertos.length + " dezena na aposta " + (k+1)+ "!" + " Que pena, não foi dessa vez!" +"<hr>"}
-            if(acertos.length===2){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!" + " Que pena, não foi dessa vez!" +"<hr>"}  
-            if(acertos.length===3){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!" + " Que pena, foi por pouco!" +"<hr>"}
-            if(acertos.length===4){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!"+" Parabéns, você acertou a quadra!" +"<hr>"}
-            if(acertos.length===5){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!"+" Parabéns, você acertou a quina!" +"<hr>"}
-            if(acertos.length===6){resultado="Você acertou " + acertos.length + " dezenas na aposta " + (k+1)+ "!"+" Parabéns, você acertou a sena, está milionário!!" +"<hr>"}
+            if(acertos.length===0){resultado="Aposta " +(k+1) +": " +"Você não acertou nenhuma dezena" + "!" + " Que pena, não foi dessa vez!" +"<hr>"}
+            if(acertos.length===1){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezena!" + " Que pena, não foi dessa vez!" +"<hr>"}
+            if(acertos.length===2){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!" + " Que pena, não foi dessa vez!" +"<hr>"}  
+            if(acertos.length===3){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!" + " Que pena, foi por pouco!" +"<hr>"}
+            if(acertos.length===4){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a quadra!" +"<hr>"}
+            if(acertos.length===5){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a quina!" +"<hr>"}
+            if(acertos.length===6){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a sena, está milionário!!" +"<hr>"}
 
         document.querySelector('#output').innerHTML+=resultado;
 
