@@ -1,4 +1,4 @@
-let numeroscadastradosq=[];
+let numeroscadastradosq=[[2,3,11,17,24,30,33,49,55,58]];
 let apostaquina=[];
 let numerossorteadosq=[];
 let tamanhoarrayq=0;
