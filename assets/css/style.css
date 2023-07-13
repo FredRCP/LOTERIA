@@ -200,6 +200,15 @@ table caption{
   border-radius: 0.5rem;
 }
 
+.btnqc{
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btnqc:hover{
+  background-color: rgba(0, 0, 255, 0.486);
+}
+
 .btnq:hover{
   background-color: rgba(0, 0, 255, 0.486);
 }
