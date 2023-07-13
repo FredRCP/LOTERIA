@@ -93,7 +93,7 @@ a{
 
 .caixas div{
   border: 0.2rem solid darkblue;
-  padding: 3.2rem;
+  padding: 2.2rem;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -102,8 +102,18 @@ a{
   border-radius: 1rem;
 }
 
+
+
 .caixas div:hover{
   background-color: rgba(0, 0, 139, 0.53);
+}
+
+.logomega{
+  background-image: url('/assets/img/unnamed.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: green;
 }
 
 .reset{
@@ -162,13 +172,13 @@ table caption{
   margin-bottom: 1rem;
 }
 
-.trevo{
-  max-width: 260px;
+.trevo  .trevos  .trevoq{
+  max-width: 280px;
 }
 
 .megabtn{
   border-radius: 0.8rem;
-  padding: 0.5rem;
+  padding: 0.4rem;
   cursor: pointer;
 }
 
@@ -185,6 +195,15 @@ table caption{
   background-color: rgba(0, 0, 255, 0.486);
 }
 
+.btnq{
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btnq:hover{
+  background-color: rgba(0, 0, 255, 0.486);
+}
+
 button{
   border-radius: 10%;
   border-color: darkblue;
@@ -196,6 +215,14 @@ button{
 
 .marcado{
   background-color: rgba(0, 0, 255, 0.502);
+}
+
+.marcadoq{
+  background-color: rgba(0, 0, 255, 0.502);
+}
+
+.quina{
+  color: darkblue;
 }
 
 
