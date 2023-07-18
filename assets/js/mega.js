@@ -1,4 +1,4 @@
-let numeroscadastrados=[];
+let numeroscadastrados=[[2,3,11,17,24,30,33,49,55,58]];
 let numerossorteados=[];
 let tamanhoarray=0;
 let i =1;
