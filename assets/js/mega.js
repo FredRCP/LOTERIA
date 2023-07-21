@@ -106,3 +106,12 @@ function megar(){
 function resetar(){
     document.location.reload();
 }
+
+const diadasemana= new Date().getDay();
+
+if(diadasemana===3){alert("Hoje é Quarta-feira, dia de sorteio da mega!")}
+if(diadasemana===6){alert("Hoje é Sábado, dia de sorteio da mega!")}
+
+
+
+

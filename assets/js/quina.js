@@ -55,6 +55,7 @@ function cadastrarapostaquina(){
             apostaquina=[];
         }
     });
+    alert('Sua aposta foi cadastrada.')
     
 }
 
