@@ -196,6 +196,7 @@ a{
 }
 
 .notification{
+  font-weight: 600;
   position: absolute;
   bottom: 50px;
   left: 50px;
