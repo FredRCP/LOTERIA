@@ -109,8 +109,7 @@ function resetar(){
 
 const diadasemana= new Date().getDay();
 
-if(diadasemana===3){alert("Hoje é Quarta-feira, dia de sorteio da mega!")}
-if(diadasemana===6){alert("Hoje é Sábado, dia de sorteio da mega!")}
+if(diadasemana===3||diadasemana===6){document.querySelector('#popup').innerHTML="Hoje é Quarta-feira, dia de sorteio da mega!"}
 
 
 
