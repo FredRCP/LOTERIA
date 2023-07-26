@@ -209,18 +209,19 @@ a{
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
-  animation: fade-in 8s linear forwards;
+  animation: fade-in 6s linear forwards;
 }
 
 .not-progress{
   position: absolute;
+  color: rgba(240, 248, 255, 0);
   left: 5px;
   bottom: 5px;
   width: calc(100%-10px);
   height: 3px;
   transform: scaleX(0);
   transform-origin: left;
-  background-image: linear-gradient(to right, #539bdb, #3250bf);
+  background-image: linear-gradient(to right, #3791df, #1436b3);
   border-radius: inherit;
   animation: load 3s 0.25s linear forwards;
 }
@@ -250,15 +251,14 @@ a{
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  gap: 6rem;
+  gap: 3rem;
   text-align: center;
-  
 }
 
 .megao{
   display: grid;
   grid-template-columns: 340px 1fr;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .mega1{
@@ -280,7 +280,11 @@ table caption{
 }
 
 .trevo  .trevos  .trevoq{
-  max-width: 280px;
+  max-width: 260px;
+}
+
+#result{
+  margin-top: -2rem;
 }
 
 .megabtn{
@@ -357,6 +361,35 @@ button{
 }
 
 .quina{
+  color: darkblue;
+}
+
+.apostar{
+  cursor: pointer;
+}
+
+.outros{
+  color: darkblue;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+
+.select{
+  padding: 0.2rem;
+  font-weight: 500;
+  color: darkblue;
+  border-color: darkblue;
+  border: 0.2rem solid darkblue;
+}
+
+#select{
+  border: 0.2rem solid darkblue;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.select::placeholder{
   color: darkblue;
 }
 
