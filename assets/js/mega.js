@@ -103,13 +103,6 @@ function megar(){
     document.querySelector('#output').innerHTML="";}} */
 
     
-function resetar(){
-    document.location.reload();
-}
-
-const diadasemana= new Date().getDay();
-
-if(diadasemana===3||diadasemana===6){document.querySelector('#popup').innerHTML="Hoje é Quarta-feira, dia de sorteio da mega!"}
 
 
 
