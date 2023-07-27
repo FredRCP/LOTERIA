@@ -50,7 +50,7 @@ if(diadasemana===3){document.querySelector('#popup').innerHTML="Hoje é Quarta-f
 if(diadasemana===6){document.querySelector('#popup').innerHTML="Hoje é Sábado, dia de sorteio da mega!"}
 
 function geraraposta(){
-    alert('em construção');
+    alert('Em construção!');
 }
 
 /*ALEATÓRIOS
