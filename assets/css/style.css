@@ -343,6 +343,15 @@ table caption{
   background-color: rgba(0, 0, 255, 0.486);
 }
 
+.btno{
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btno:hover{
+  background-color: rgba(0, 0, 255, 0.486);
+}
+
 button{
   border-radius: 10%;
   border-color: darkblue;
