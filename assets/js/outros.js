@@ -8,6 +8,7 @@ function aleatorio(){
     let opcaoValor = select.options[select.selectedIndex].value;
     let ndezenas=Number(document.querySelector('#ndezenas').value);
     let x;
+    let y;
     if(ndezenas===0){alert('Escolha o número de dezenas')};
     
     switch(opcaoValor){
