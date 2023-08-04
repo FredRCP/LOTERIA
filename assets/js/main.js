@@ -49,20 +49,6 @@ const diadasemana= new Date().getDay();
 if(diadasemana===3){document.querySelector('#popup').innerHTML="Hoje é Quarta-feira, dia de sorteio da mega!"}
 if(diadasemana===6){document.querySelector('#popup').innerHTML="Hoje é Sábado, dia de sorteio da mega!"}
 
-function geraraposta(){
-    alert('Em construção!');
-}
 
-/*ALEATÓRIOS
 
-function geraraposta(){
-    const aposta=[]
-    const numerosorteado=sorteio();
-}
-
-function sorteio(y){
-    return Math.floor(Math.random()*y+1);
-}
-
-*/
 
