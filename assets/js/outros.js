@@ -9,10 +9,10 @@ function aleatorio(){
     let ndezenas=Number(document.querySelector('#ndezenas').value);
     let x;
     let y;
-    if(ndezenas===0){alert('Escolha o número de dezenas')};
+    if(ndezenas===0){ return alert('Escolha o número de dezenas')};
     
     switch(opcaoValor){
-        case 'nada': alert('Selecione o tipo de jogo');
+        case 'nada': return alert('Selecione o tipo de jogo');
         break;
         case 'amegasena': x=60; y='Mega-Sena'; if(ndezenas<6||ndezenas>15){return alert('Escolha de 6 a 15 dezenas')}; //6 a 15  1-60
         break;
@@ -22,7 +22,7 @@ function aleatorio(){
         break;
         case 'alotofacil': x=25; y="Lotofácil"; if(ndezenas<15||ndezenas>20){return alert('Escolha de 15 a 20 dezenas')}; // 15 a 20 1-25
         break;
-        case 'alotomania': x=100; y="Lotomanina"; if(ndezenas!==50){return alert('Escolha 50 dezenas')}; // 50  1 - 100
+        case 'alotomania': x=100; y="Lotomania"; if(ndezenas!==50){return alert('Escolha 50 dezenas')}; // 50  1 - 100
         break;
         case 'asupersete': x=9; y="Supersete"; if(ndezenas<7||ndezenas>21){return alert('Escolha de 7 a 21 dezenas')}; // 0-9 cada coluna; tem q escolher 7 a 21 numeros
         break;
@@ -30,6 +30,7 @@ function aleatorio(){
         break;
         case 'adiadesorte': x=31; y="Dia de sorte"; if(ndezenas<7||ndezenas>15){return alert('Escolha de 7 a 15 dezenas')}; // 7 a 15; 1-31
         break;
+        default: return;
 
     }
     
