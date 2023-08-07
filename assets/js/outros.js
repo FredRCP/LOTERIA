@@ -40,7 +40,8 @@ function aleatorio(){
             aposta.push(outro);
         }
     }
-    aposta=aposta.join('-');
+    aposta.sort((a, b)=>a-b);
+    aposta=aposta.join(' - ');
     document.querySelector('#raposta').innerHTML= y + ":" + '<br>' +aposta;
 }
 
