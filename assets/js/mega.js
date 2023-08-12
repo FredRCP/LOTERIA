@@ -1,7 +1,7 @@
 let numeroscadastrados=[[2,3,11,17,24,30,33,49,55,58], [2,5,6,36,40,48,50,53,55,58],[12,15,18,21,23,24,31,41,45,60],[4,17,24,29,30,33,49,50,51,58],
 [4,8,14,43,44,47,53,54,57,58],[4,15,19,33,35,36,38,42,47,58]];
 let numerossorteados=[];
-let tamanhoarray=0;
+let tamanhoarray=6;
 let i =1;
 
 //CADASTRAR APOSTAS
@@ -66,13 +66,14 @@ function verificar(){
         }   
         
         let resultado="";
-            if(acertos.length===0){resultado="Aposta " +(k+1) +": " +"Você não acertou nenhuma dezena" + "!" + " Que pena, não foi dessa vez!" +"<hr>"}
-            if(acertos.length===1){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezena!" + " Que pena, não foi dessa vez!" +"<hr>"}
-            if(acertos.length===2){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!" + " Que pena, não foi dessa vez!" +"<hr>"}  
-            if(acertos.length===3){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!" + " Que pena, foi por pouco!" +"<hr>"}
-            if(acertos.length===4){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a quadra!" +"<hr>"}
-            if(acertos.length===5){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a quina!" +"<hr>"}
-            if(acertos.length===6){resultado="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a sena, está milionário!!" +"<hr>"}
+        if(k>=0&&k<6){resultado="Jogada do bolão da Mega. "}
+            if(acertos.length===0){resultado+="Aposta " +(k+1) +": " +"Você não acertou nenhuma dezena" + "!" + " Que pena, não foi dessa vez!" +"<hr>"}
+            if(acertos.length===1){resultado+="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezena!" + " Que pena, não foi dessa vez!" +"<hr>"}
+            if(acertos.length===2){resultado+="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!" + " Que pena, não foi dessa vez!" +"<hr>"}  
+            if(acertos.length===3){resultado+="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!" + " Que pena, foi por pouco!" +"<hr>"}
+            if(acertos.length===4){resultado+="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a quadra!" +"<hr>"}
+            if(acertos.length===5){resultado+="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a quina!" +"<hr>"}
+            if(acertos.length===6){resultado+="Aposta " +(k+1) +": " +"Você acertou " + acertos.length + " dezenas!"+" Parabéns, você acertou a sena, está milionário!!" +"<hr>"; win()}
 
         document.querySelector('#output').innerHTML+=resultado;
 
@@ -103,7 +104,12 @@ function megar(){
     if(document.querySelector("#output")!=null){  
     document.querySelector('#output').innerHTML="";}} */
 
-    
+const vitoria= new Audio('./assets/audio/win.wav');
+const moedas= new Audio('./assets/audio/moedas.mp3');
+function win(){
+    vitoria.play();
+    moedas.play();
+}
 
 
 
