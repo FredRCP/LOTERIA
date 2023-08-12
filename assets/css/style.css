@@ -406,5 +406,9 @@ button{
   color: darkblue;
 }
 
+#result #output{
+  text-align: left;
+}
+
 
 
