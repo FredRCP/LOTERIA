@@ -279,7 +279,7 @@ table caption{
   margin-bottom: 1rem;
 }
 
-.trevo  .trevos  .trevoq{
+.trevo  .trevos  .trevoq .trevod{
   max-width: 260px;
 }
 
@@ -369,7 +369,15 @@ button{
   background-color: rgba(0, 0, 255, 0.502);
 }
 
+.marcadod{
+  background-color: rgba(0, 0, 255, 0.502);
+}
+
 .quina{
+  color: darkblue;
+}
+
+.dupla{
   color: darkblue;
 }
 
@@ -390,12 +398,17 @@ button{
   color: darkblue;
   border-color: darkblue;
   border: 0.2rem solid darkblue;
+  border-radius: 0.5rem;
 }
 
 #select{
   border: 0.2rem solid darkblue;
   padding: 2rem;
   border-radius: 2rem;
+}
+
+#select input{
+  border-radius: 0.5rem;
 }
 
 .select::placeholder{
