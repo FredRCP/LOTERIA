@@ -279,7 +279,7 @@ table caption{
   margin-bottom: 1rem;
 }
 
-.trevo  .trevos  .trevoq .trevod{
+.trevo .trevos .trevoq .trevod{
   max-width: 260px;
 }
 
@@ -335,6 +335,15 @@ table caption{
   border-radius: 0.5rem;
 }
 
+.btnd{
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btnd:hover{
+  background-color: #a1032b;
+}
+
 .btnqc:hover{
   background-color: rgba(0, 0, 255, 0.486);
 }
@@ -378,7 +387,7 @@ button{
 }
 
 .dupla{
-  color: darkblue;
+  color: #a1032b;
 }
 
 .apostar{
